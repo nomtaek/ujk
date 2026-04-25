@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\JenisKopiController;
+use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 // Redirect root ke login
@@ -20,4 +21,5 @@ Route::post('/logout', [AuthController::class, 'logout'])
 // CRUD routes (hanya bisa diakses saat login)
 Route::middleware('auth')->group(function () {
     Route::resource('kopi', JenisKopiController::class);
+    Route::resource('supplier', SupplierController::class);
 });
