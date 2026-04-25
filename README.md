@@ -1,66 +1,169 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📱 Toko kopi  
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi web berbasis **Laravel 11** yang dirancang untuk digitalisasi manajemen stok dan aset pada toko kopi. Aplikasi ini mengintegrasikan sistem autentikasi keamanan, manajemen data (CRUD), dan antarmuka responsif.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 👤 Identitas Mahasiswa
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **NAMA :** Muhammad Saifullah
+- **NIM :** 220103199
+- **KELAS:** 22TIA6
+- **INSTANSI:** Universitas Duta Bangsa Surakarta
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🗂️ Daftar Isi
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Tentang Proyek
+Fitur Utama
+Teknologi yang Digunakan
+Struktur Proyek
+Struktur Database
+Instalasi & Konfigurasi
+Keamanan & Alur Data
+Rute Aplikasi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Tentang Proyek
 
-## Laravel Sponsors
+Toko Kopi Manager merupakan aplikasi berbasis web yang digunakan untuk membantu pengelolaan data menu dan stok pada sebuah usaha kedai kopi. Sistem ini dirancang untuk menggantikan pencatatan manual menjadi lebih terstruktur, cepat, dan efisien.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Melalui aplikasi ini, admin dapat mengelola berbagai data seperti daftar menu kopi, harga, deskripsi, serta jumlah stok yang tersedia. Selain itu, sistem juga dilengkapi dengan fitur autentikasi login sehingga hanya pengguna yang terdaftar (admin) yang dapat mengakses dan mengelola data.
 
-### Premium Partners
+Dengan adanya sistem ini, diharapkan proses manajemen menu pada toko kopi menjadi lebih mudah, meminimalisir kesalahan pencatatan, serta meningkatkan efisiensi operasional.
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Fitur Utama
 
-## Contributing
+- **Autentikasi Keamanan** — Login & Logout menggunakan session Laravel yang diproteksi dengan **Bcrypt Hashing** dan perlindungan terhadap serangan CSRF.
+- **Dashboard Statistik** — Menampilkan ringkasan total item, total stok tersedia, dan kategori barang secara real-time.
+- **Manajemen Inventaris (CRUD)** — Fitur lengkap untuk Menambah, Melihat Detail, Mengedit, dan Menghapus data barang.
+- **Middleware Protection** — Memastikan halaman manajemen hanya dapat diakses oleh pengguna yang sudah terverifikasi (login).
+- **UI Responsif** — Antarmuka modern menggunakan **Tailwind CSS** yang optimal diakses melalui PC maupun Smartphone.
+- **Notifikasi Sistem** — Integrasi **SweetAlert2** untuk memberikan pesan konfirmasi dan status sukses/gagal pada setiap aksi pengguna.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## Teknologi yang Digunakan
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| Komponen       | Detail                           |
+| :------------- | :------------------------------- |
+| **Framework**  | Laravel 11 (PHP)                 |
+| **Database**   | MySQL                            |
+| **Frontend**   | Tailwind CSS & Blade Templating  |
+| **Library UI** | SweetAlert2 & FontAwesome 6      |
+| **Security**   | Bcrypt Hashing & CSRF Protection |
+| **Build Tool** | Vite                             |
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Struktur Proyek
 
-## License
+```
+tokokopi/
+├── app/
+│   ├── Http/Controllers/
+│   │   └── ProductController.php
+│   └── Models/
+│       ├── User.php
+│       └── Product.php
+├── database/
+│   └── migrations/
+├── resources/views/
+│   ├── auth/
+│   └── products/
+├── routes/
+│   └── web.php
+└── .env
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## Struktur Database
+
+### Tabel `items` (Manajemen Stok)
+
+| Kolom         | Tipe        | Keterangan                         |
+| :------------ | :---------- | :--------------------------------- |
+| `id`          | bigint (PK) | Auto Increment                     |
+| `nama_barang` | string      | Nama produk/aksesoris              |
+| `kategori`    | string      | Contoh: Smartphone, Charger, Audio |
+| `harga_beli`  | decimal     | Harga modal barang                 |
+| `harga_jual`  | decimal     | Harga jual ke konsumen             |
+| `stok`        | integer     | Jumlah unit tersedia               |
+| `keterangan`  | text        | Deskripsi tambahan barang          |
+
+### Tabel `users` (Otentikasi)
+
+| Kolom      | Tipe        | Keterangan                 |
+| :--------- | :---------- | :------------------------- |
+| `id`       | bigint (PK) | Auto Increment             |
+| `name`     | string      | Nama lengkap Admin         |
+| `email`    | string      | Email untuk login (Unique) |
+| `password` | string      | **Bcrypt Hash**            |
+
+---
+
+## Instalasi & Konfigurasi
+
+1. **Clone Repository**
+
+    ```bash
+    git clone https://github.com/nomtaek/ujk
+    cd UJK
+    ```
+
+2. **Install Dependensi**
+
+    ```bash
+    composer install
+    npm install && npm run build
+    ```
+
+3. **Konfigurasi Database**
+   Salin `.env.example` ke `.env` dan atur koneksi database MySQL.
+
+4. **Migrasi & Key Generate**
+
+    ```bash
+    php artisan key:generate
+    php artisan migrate --seed
+    ```
+
+5. **Jalankan Aplikasi**
+    ```bash
+    php artisan serve
+    ```
+
+---
+
+## Akun Default (Seeder)
+
+Setelah menjalankan perintah `php artisan migrate --seed`, Anda dapat menggunakan akun berikut untuk masuk ke sistem:
+
+'email' => 'user1@gmail.com',
+                'email_verified_at' => now(),
+                'password' => Hash::make('password123'),
+---
+
+## Keamanan & Alur Data
+
+Sistem ini menerapkan dua lapisan keamanan utama:
+
+1. **Bcrypt Hashing** — Diimplementasikan pada AuthController. Saat pengguna login atau mendaftar, password diproses menggunakan fungsi `Hash::make` yang menghasilkan string acak aman.
+
+2. **Middleware** — Seluruh rute manajemen stok di dalam `web.php` dibungkus dengan `Route::middleware(['auth'])`. Ini bertugas memvalidasi session user sebelum mengizinkan akses ke database.
+
+---
+
+## Rute Aplikasi
+
+| Method | URL             | Controller               | Fungsi                |
+| :----- | :-------------- | :----------------------- | :-------------------- |
+| GET    | `/login`        | AuthController@showLogin | Form Login            |
+| POST   | `/login`        | AuthController@login     | Proses Verifikasi     |
+| GET    | `/dashboard`    | ItemController@index     | Tampilan Utama (Auth) |
+| GET    | `/items/create` | ItemController@create    | Form Tambah Stok      |
+| POST   | `/items`        | ItemController@store     | Simpan Data ke DB     |
+| DELETE | `/items/{id}`   | ItemController@destroy   | Hapus Data            |
