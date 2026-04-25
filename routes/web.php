@@ -5,8 +5,8 @@ use App\Http\Controllers\JenisKopiController;
 use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
-// Redirect root ke login
-Route::get('/', fn() => redirect()->route('login'));
+// Redirect root ke kopi
+Route::get('/', fn() => redirect()->route('kopi.index'));
 
 // Auth routes
 Route::middleware('guest')->group(function () {
